@@ -5,7 +5,7 @@ import hug
 from hug_middleware_cors import CORSMiddleware
     
 
-@hug.post('/test')
+@hug.get('/test')
 def parse(model: str, text: str):    
     return 'Hi! Test server!'
 
