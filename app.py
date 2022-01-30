@@ -6,9 +6,9 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return "Hello World!"
-    
+
 @app.route("/test")
-def index():
+def test():
     return "Test!"
 
 @app.route("/ent",methods=['POST'])
