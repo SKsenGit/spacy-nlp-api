@@ -12,7 +12,9 @@ def test():
     return "Test!"
 
 @app.route("/ent",methods=['POST'])
+#def ent(text: str):
 def ent(text: str):
+    text = "test my name is Marita"
     """Get entities for displaCy ENT visualizer."""
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(text)
