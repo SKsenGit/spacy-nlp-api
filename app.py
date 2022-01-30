@@ -6,7 +6,7 @@ from hug_middleware_cors import CORSMiddleware
     
 
 @hug.get('/test')
-def parse(model: str, text: str):    
+def test():    
     return 'Hi! Test server!'
 
 if __name__ == "__main__":
