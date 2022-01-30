@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-from server import doc2json
 import spacy
 
 app = Flask(__name__)
