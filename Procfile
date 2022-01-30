@@ -1,1 +1,1 @@
-web: gunicorn app:__hug_wsgi__
+web: waitress app:__hug_wsgi__
