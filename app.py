@@ -15,7 +15,7 @@ def test():
 #def ent(text: str):
 def ent():
     content = request.json
-    print(content['mytext'])
+    print(content['text'])
     text = "test my name is Marita"
     """Get entities for displaCy ENT visualizer."""
     nlp = spacy.load("en_core_web_sm")
