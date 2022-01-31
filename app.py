@@ -19,7 +19,9 @@ def ent():
     """Get entities for displaCy ENT visualizer."""
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(text)
-    return doc2json(doc)
+    response = jsonify(doc2json(doc))
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 def doc2json(doc: spacy.tokens.Doc):
     json_doc = {
