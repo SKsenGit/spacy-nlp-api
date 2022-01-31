@@ -24,6 +24,7 @@ def doc2json(doc: spacy.tokens.Doc):
         'is_sentenced': doc.is_sentenced
     }
     ents = [{
+        'text': ent.text,
         'start': ent.start,
         'end': ent.end,
         'label': ent.label_
