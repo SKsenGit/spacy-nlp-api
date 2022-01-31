@@ -102,7 +102,7 @@ def ent():
         """Get entities for displaCy ENT visualizer."""
         nlp = spacy.load("en_core_web_sm")
         doc = nlp(text)              
-        return corsify_actual_response(jsonify(doc2json(doc))
+        return corsify_actual_response(jsonify(doc2json(doc)))
     else:
         raise RuntimeError("Weird - don't know how to handle method {}".format(request.method))
 
